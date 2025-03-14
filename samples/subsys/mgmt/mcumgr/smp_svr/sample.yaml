@@ -225,3 +225,14 @@ tests:
       - nrf5340dk/nrf5340/cpuapp
     integration_platforms:
       - nrf5340dk/nrf5340/cpuapp
+  sample.mcumgr.smp_svr.serial.nrf54h20dk:
+    extra_args:
+      - FILE_SUFFIX=nrf54h20
+      - EXTRA_CONF_FILE="overlay-serial.conf"
+      - SB_CONFIG_PARTITION_MANAGER=n
+      - SB_CONFIG_SUIT_MPI_GENERATE=n
+      - SB_CONFIG_SUIT_ENVELOPE=n
+    platform_allow:
+      - nrf54h20dk/nrf54h20/cpuapp/iron
+    integration_platforms:
+      - nrf54h20dk/nrf54h20/cpuapp/iron
