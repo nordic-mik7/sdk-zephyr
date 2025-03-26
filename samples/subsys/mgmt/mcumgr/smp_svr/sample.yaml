@@ -225,3 +225,30 @@ tests:
       - nrf5340dk/nrf5340/cpuapp
     integration_platforms:
       - nrf5340dk/nrf5340/cpuapp
+  sample.mcumgr.smp_svr.serial.nrf54h20dk:
+    extra_args:
+      - FILE_SUFFIX=nrf54h20
+      - EXTRA_CONF_FILE="overlay-serial.conf"
+      - DTC_OVERLAY_FILE="boards/nrf54h20dk_nrf54h20_cpuapp.overlay"
+      - SB_CONFIG_PARTITION_MANAGER=n
+      - SB_CONFIG_SUIT_MPI_GENERATE=n
+      - SB_CONFIG_SUIT_ENVELOPE=n
+    platform_allow:
+      - nrf54h20dk/nrf54h20
+    integration_platforms:
+      - nrf54h20dk/nrf54h20
+  sample.mcumgr.smp_svr.bt.nrf54h20dk:
+    harness: bluetooth
+    tags: bluetooth
+    extra_args:
+      - FILE_SUFFIX=nrf54h20
+      - EXTRA_CONF_FILE="overlay-bt.conf"
+      - DTC_OVERLAY_FILE="boards/nrf54h20dk_nrf54h20_cpuapp.overlay"
+      - SB_CONFIG_PARTITION_MANAGER=n
+      - SB_CONFIG_SUIT_MPI_GENERATE=n
+      - SB_CONFIG_SUIT_ENVELOPE=n
+      - SB_CONFIG_NETCORE_HCI_IPC=y
+    platform_allow:
+      - nrf54h20dk/nrf54h20
+    integration_platforms:
+      - nrf54h20dk/nrf54h20
