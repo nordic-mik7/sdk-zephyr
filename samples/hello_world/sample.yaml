@@ -16,3 +16,11 @@ common:
 tests:
   sample.basic.helloworld:
     tags: introduction
+
+  sample.basic.mcuboot.single_app:
+    extra_args:
+      - FILE_SUFFIX="single_app"
+    platform_allow:
+      - nrf52840dk/nrf52840
+    integration_platforms:
+      - nrf52840dk/nrf52840

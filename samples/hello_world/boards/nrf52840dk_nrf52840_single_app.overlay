@@ -1,0 +1,1 @@
+#include "../sysbuild/nrf52840_single_app.overlay"
