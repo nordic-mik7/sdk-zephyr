@@ -1,0 +1,11 @@
+#include "nrf52840_fw_loader.overlay"
+
+/ {
+	chosen {
+		zephyr,code-partition = &boot_partition;
+	};
+
+	aliases {
+		bootloader-led0 = &led0;
+	};
+};

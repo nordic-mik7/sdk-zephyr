@@ -24,3 +24,11 @@ tests:
       - nrf52840dk/nrf52840
     integration_platforms:
       - nrf52840dk/nrf52840
+
+  sample.basic.mcuboot.fw_loader:
+    extra_args:
+      - FILE_SUFFIX="fw_loader"
+    platform_allow:
+      - nrf52840dk/nrf52840
+    integration_platforms:
+      - nrf52840dk/nrf52840

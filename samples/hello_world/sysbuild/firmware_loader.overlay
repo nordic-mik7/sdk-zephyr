@@ -1,0 +1,7 @@
+#include "nrf52840_fw_loader.overlay"
+
+/ {
+	chosen {
+		zephyr,code-partition = &slot1_partition;
+	};
+};
