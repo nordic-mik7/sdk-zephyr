@@ -1,4 +1,4 @@
-#include "nrf52840_fw_loader.overlay"
+#include "nrf54l15_fw_loader.overlay"
 
 / {
 	chosen {

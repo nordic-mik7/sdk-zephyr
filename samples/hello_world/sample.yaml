@@ -21,14 +21,14 @@ tests:
     extra_args:
       - FILE_SUFFIX="single_app"
     platform_allow:
-      - nrf52840dk/nrf52840
+      - nrf54l15dk/nrf54l15/cpuapp
     integration_platforms:
-      - nrf52840dk/nrf52840
+      - nrf54l15dk/nrf54l15/cpuapp
 
   sample.basic.mcuboot.fw_loader:
     extra_args:
       - FILE_SUFFIX="fw_loader"
     platform_allow:
-      - nrf52840dk/nrf52840
+      - nrf54l15dk/nrf54l15/cpuapp
     integration_platforms:
-      - nrf52840dk/nrf52840
+      - nrf54l15dk/nrf54l15/cpuapp
