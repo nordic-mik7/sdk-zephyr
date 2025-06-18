@@ -6,6 +6,7 @@
 	};
 
 	aliases {
+		//mcuboot-button0 = &button0;
 		bootloader-led0 = &led0;
 	};
 };
